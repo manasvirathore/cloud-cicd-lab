@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Root route
 @app.route("/")
 def home():
-    return "<h1>Flask App is Running!</h1><p>Visit /api/hello or /greet/YourName</p>"
+    return "<h1>Flask App is Running! Congratulations</h1><p>Visit /api/hello or /greet/YourName</p>"
 
 
 # Dynamic URL parameter route
@@ -32,6 +32,6 @@ def api_hello():
     return jsonify({"status": "success", "message": "Hello from Flask API!"}), 200
 
 
+
 if __name__ == "__main__":
-    # Runs local development server on http://127.0.0.1:5000
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000)
