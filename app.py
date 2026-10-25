@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Root route
 @app.route("/")
 def home():
-    return "<h1>Flask App is Running! Brought To You By Manasvi Rathore</h1><p>Visit /api/hello or /greet/YourName</p>"
+    return "<h1>Flask App is Running! Congratulations</h1><p>Visit /api/hello or /greet/YourName</p>"
 
 
 # Dynamic URL parameter route
